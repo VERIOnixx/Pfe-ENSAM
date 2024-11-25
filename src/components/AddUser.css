@@ -1,0 +1,140 @@
+/* Center the container and make it square */
+.add-user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    height: 500px; /* Fixed height */
+    width: 500px;  /* Fixed width */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    position: absolute; /* To center on the page */
+    top: 50%; /* Move to the center of the page */
+    left: 50%; /* Move to the center of the page */
+    transform: translate(-50%, -50%); /* Adjust to ensure perfect centering */
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Header */
+  .add-user-container h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeIn 1.2s ease-out;
+    letter-spacing: 1px;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    animation: fadeIn 1.4s ease-out;
+  }
+  
+  /* Input Group (for aligning inputs in a row) */
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* Label Styling */
+  label {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    flex-basis: 100%;
+    padding-bottom: 5px;
+  }
+  
+  /* Input Styling */
+  input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: 0 2px 10px rgba(8, 4, 4, 0.1);
+    transition: all 0.3s ease-in-out;
+    background-color: #f9f9f9;
+    flex: 1; /* Make input elements take equal width */
+   
+    width: 90%;
+  }
+  
+  /* Focused Input Styling */
+  input:focus {
+    border-color: #0078d4;
+    box-shadow: 0 4px 15px rgba(0, 120, 212, 0.3);
+    background-color: #ffffff;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    transform-origin: center;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Success Message Styling */
+  .message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+    opacity: 0;
+    animation: showMessage 1s forwards;
+  }
+  
+  /* Focus effect on the input fields */
+  input:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Button active effect */
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Animation for fade-in effects */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      
+    }
+    100% {
+      opacity: 1;
+      
+    }
+  }
+  
+  @keyframes showMessage {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

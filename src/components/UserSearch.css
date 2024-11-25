@@ -1,0 +1,114 @@
+/* Animation for page load */
+@keyframes fadeInPage {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for table rows */
+@keyframes fadeInTableRows {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Search Container Styling */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  background-color: #f4f4f9;
+  animation: fadeInPage 1s ease-out;
+  padding: 30px;
+}
+
+/* Header Styling */
+.search-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  animation: fadeInPage 1.2s ease-out forwards;
+}
+
+/* Input Styling */
+.search-container input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #0078d4;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeInPage 1.4s ease-out forwards;
+}
+
+.search-container input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.search-container input:focus {
+  border-color: #0053a0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+/* Table Styling */
+.user-table {
+  margin-top: 30px;
+  width: 80%;
+  border-collapse: collapse;
+  animation: fadeInPage 1.6s ease-out forwards;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+}
+.user-table th{
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.user-table th {
+  background-color: #0078d4;
+  color: white;
+  font-weight: bold;
+}
+
+.user-table tr {
+  opacity: 0;
+  animation: fadeInTableRows 1s ease-out forwards;
+}
+
+.user-table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.user-table tr:hover {
+  background-color: #e6f7ff;
+}
+
+/* Table hover effect */
+.user-table tr:nth-child(even):hover {
+  background-color: #e6f7ff;
+}

@@ -1,0 +1,71 @@
+@keyframes pageEntry {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.help-page {
+  text-align: center;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  animation: pageEntry 1s ease-out;
+}
+
+.help-page h1 {
+  font-size: 36px;
+  color: #0078d4;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.help-page p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  animation: fadeInUp 1.0s ease-out forwards;
+}
+
+.help-page h2 {
+  font-size: 24px;
+  color: #0078d4;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.help-page ul {
+  list-style: none;
+  padding: 0;
+  animation: fadeInUp 1.4s ease-out forwards;
+}
+
+.help-page ul li {
+  font-weight: bold;
+  color: #444;
+  margin: 10px 0 5px;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.help-page ul p {
+  margin: 0 0 20px;
+  font-size: 16px;
+  color: #555;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
