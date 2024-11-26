@@ -40,6 +40,7 @@ const UserSearch = () => {
           <tr>
             <th>ID</th>
             <th>Nom</th>
+            <th>CIN</th>
             <th>Email</th>
             <th>Téléphone</th>
             <th>Entreprise</th>
@@ -50,6 +51,7 @@ const UserSearch = () => {
             <tr key={user.id}>
               <td>{user.id}</td>
               <td>{user.name}</td>
+              <td>{user.cin}</td>
               <td>{user.email}</td>
               <td>{user.phone}</td>
               <td>{user.company}</td>
